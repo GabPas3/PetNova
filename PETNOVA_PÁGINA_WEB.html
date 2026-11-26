@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#8268d5">
+  <meta name="description" content="PETNOVA: el ecosistema digital panameño que conecta a las familias con herramientas para el bienestar de sus mascotas.">
+  <title>PETNOVA — El hogar digital de tu mascota</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="topline"><span class="flag"><img class="flag-image" src="assets/panama-flag.svg" alt="Bandera de Panamá"></span> Hecho para la comunidad de mascotas de Panamá <span class="topline-dot">✦</span> Cuidarlos también es conectar</div>
+
+  <header class="header" id="top">
+    <a class="logo" href="#inicio" aria-label="PETNOVA, inicio">
+      <img class="logo-image" src="assets/petnova-logo.png" alt="PETNOVA - Cuidamos lo que amas">
+    </a>
+    <button class="menu-button" id="menuButton" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a class="nav-link active" href="#inicio">Inicio</a>
+      <a class="nav-link" href="#nosotros">Sobre nosotros</a>
+      <a class="nav-link" href="#funciones">Funciones</a>
+      <a class="nav-link" href="#pet-map">Mapa Pet</a>
+      <a class="nav-link" href="#contacto">Contacto</a>
+      <a class="nav-link" href="#privacidad">Privacidad</a>
+      <a class="nav-cta" href="#funciones">Explorar PETNOVA <span>↗</span></a>
+      <button class="nav-auth-button" id="loginNavButton" type="button" data-auth-open="login">Iniciar sesión</button>
+      <button class="nav-auth-button nav-auth-primary" id="signupNavButton" type="button" data-auth-open="signup">Crear cuenta</button>
+    </nav>
+  </header>
+
+  <main id="publicMain">
+    <section class="hero" id="inicio">
+      <div class="hero-bg-shape shape-one"></div><div class="hero-bg-shape shape-two"></div>
+      <div class="hero-inner wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-paw">✿</span> BIENVENIDOS A PETNOVA <span class="eyebrow-line"></span></div>
+          <h1>El hogar digital<br>de <span>tu mascota.</span></h1>
+          <p class="hero-lead">Todo lo que necesitas para cuidar, proteger y celebrar a quien llena tus días de alegría. Un solo lugar, una comunidad que los entiende.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#funciones">Descubre PETNOVA <span>↗</span></a>
+            <button class="btn btn-ghost" type="button" data-auth-open="signup">Ver demostración <span class="play">▶</span></button>
+          </div>
+          <div class="hero-note"><span class="note-icon">♡</span><span><strong>Más que una plataforma, una comunidad.</strong><small>Conectando el cuidado animal en Panamá.</small></span></div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-photo-frame">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1100&q=88" alt="Golden retriever mirando con cariño a la cámara">
+            <div class="photo-wash"></div>
+          </div>
+          <div class="floating-card reminder-card"><span class="floating-icon turquoise">✓</span><span><strong>Su cuidado, organizado</strong><small>Todo en un mismo lugar</small></span></div>
+          <div class="floating-card community-card"><span class="community-avatars"><img src="https://images.unsplash.com/photo-1779261309891-7ecf394d1452?auto=format&amp;fit=crop&amp;crop=faces&amp;w=96&amp;h=96&amp;q=85" alt="Perro alegre" decoding="async"><img src="https://images.unsplash.com/photo-1781546234474-1ef8174778e8?auto=format&amp;fit=crop&amp;crop=faces&amp;w=96&amp;h=96&amp;q=85" alt="Gato alegre" decoding="async"><img class="community-paw" src="assets/pet-paw-photo.jpg" alt="" aria-hidden="true"></span><span><strong>Una comunidad</strong><small>que comparte el mismo amor</small></span></div>
+          <div class="hero-sticker">♡</div><span class="hero-sparkle sparkle-a">✦</span><span class="hero-sparkle sparkle-b">✧</span>
+        </div>
+      </div>
+      <div class="hero-bottom wrap"><span>BIENESTAR ANIMAL</span><i></i><span>PREVENCIÓN</span><i></i><span>COMUNIDAD</span><i></i><span>PANAMÁ</span></div>
+    </section>
+
+    <section class="intro section wrap" id="nosotros">
+      <div class="section-tag"><span>01</span> NUESTRA COMUNIDAD</div>
+      <div class="intro-grid">
+        <div><h2>Cuidarles no debería ser una tarea. <span>Debería ser una experiencia.</span></h2></div>
+        <div class="intro-copy">
+          <p class="intro-highlight">Somos Pet Nova, una comunidad de mascotas de Panamá.</p>
+          <p>Conectamos a dueños apasionados con herramientas reales, información confiable y una red de apoyo que transforma el día a día del cuidado.</p>
+          <a class="arrow-link" href="#mision">Conoce lo que nos mueve <span>↗</span></a>
+        </div>
+      </div>
+      <div class="values">
+        <article class="value"><span class="value-icon purple-icon">♡</span><div><h3>Amor y confianza</h3><p>El vínculo con nuestras mascotas merece acompañamiento y tranquilidad.</p></div></article>
+        <article class="value"><span class="value-icon aqua-icon">⌖</span><div><h3>Conexión útil</h3><p>Acercamos información y servicios para tomar mejores decisiones.</p></div></article>
+        <article class="value"><span class="value-icon lilac-icon">✦</span><div><h3>Cuidado preventivo</h3><p>Promovemos hábitos que ayudan a cuidarles en cada etapa de su vida.</p></div></article>
+      </div>
+    </section>
+
+    <section class="features-section section" id="funciones">
+      <div class="wrap">
+        <div class="section-tag light-tag"><span>02</span> TODO LO QUE NECESITAS</div>
+        <div class="section-heading">
+          <div><h2>Un ecosistema pensado<br>para <span>ellos y para ti.</span></h2></div>
+          <p>Herramientas que reúnen la información, la prevención y la conexión que hacen más sencillo el cuidado de cada compañero de vida.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card health-card">
+            <div class="feature-head"><span>01 / SALUD</span><span class="feature-bubble">✚</span></div>
+            <div class="feature-icon-large">✚</div>
+            <h3>Historial médico</h3>
+            <p>Ten organizada la información importante de tu mascota: antecedentes, consultas y registros de salud.</p>
+            <div class="mini-record">
+              <div class="record-top"><span class="record-avatar"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&amp;fit=crop&amp;crop=faces&amp;w=80&amp;h=80&amp;q=85" alt="Perro" loading="lazy" decoding="async"></span><span><b>Perfil de mi mascota</b><small>Un espacio para sus cuidados</small></span><span class="record-dots">•••</span></div>
+              <div class="record-line"><span class="record-check">✓</span><span><b>Registro de vacunas</b><small>Fechas y próximos controles</small></span><span class="record-arrow">›</span></div>
+              <div class="record-line"><span class="record-check">＋</span><span><b>Historial de consultas</b><small>Información organizada</small></span><span class="record-arrow">›</span></div>
+            </div>
+          </article>
+          <article class="feature-card alert-card">
+            <div class="feature-head"><span>02 / SEGURIDAD</span><span class="feature-bubble">♡</span></div>
+            <div class="alert-illustration" aria-hidden="true">
+              <div class="alert-orbit"></div>
+              <div class="alert-dog">
+                <img class="alert-dog-art" src="https://images.unsplash.com/photo-1767288341321-83461752dd53?auto=format&amp;fit=crop&amp;w=320&amp;q=85" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="alert-bell">!</div>
+              <span class="alert-star star-one">✦</span>
+              <span class="alert-star star-two">✧</span>
+            </div>
+            <h3>Alerta Paw</h3>
+            <p>Una función pensada para momentos urgentes, para facilitar el acceso a información clave y activar una red de apoyo.</p>
+            <button class="card-link" data-modal="paw">Conocer Alerta Paw <span>↗</span></button>
+          </article>
+          <article class="feature-card calendar-card">
+            <div class="feature-head"><span>03 / ORGANIZACIÓN</span><span class="feature-bubble">▦</span></div>
+            <div class="calendar-art"><div class="calendar-top"><span>MI CALENDARIO</span><span>•••</span></div><div class="calendar-month">Próximos cuidados <b>♡</b></div><div class="calendar-days"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div><div class="calendar-dates"><span>12</span><span class="date-active">13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span></div><div class="calendar-event"><i></i><span><b>Recordatorio de cuidado</b><small>Organiza sus fechas importantes</small></span></div></div>
+            <h3>Calendario inteligente</h3>
+            <p>Organiza recordatorios de vacunas, citas y fechas importantes para mantener sus cuidados al día.</p>
+          </article>
+          <article class="feature-card map-card">
+            <div class="feature-head"><span>04 / CONEXIÓN</span><span class="feature-bubble">⌖</span></div>
+            <div class="map-art"><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div><div class="map-green green-one"></div><div class="map-green green-two"></div><span class="map-pin pin-one">✚</span><span class="map-pin pin-two">♡</span><span class="map-pin pin-three">✚</span><span class="map-you">TÚ ESTÁS AQUÍ</span></div>
+            <h3>Mapa Pet</h3>
+            <p>Explora veterinarias, servicios y espacios pet-friendly para conectar con opciones útiles cerca de ti.</p>
+            <a class="card-link" href="#pet-map">Explorar el mapa <span>↗</span></a>
+          </article>
+          <article class="feature-card moments-card">
+            <div class="feature-head"><span>05 / COMUNIDAD</span><span class="feature-bubble">♡</span></div>
+            <div class="moments-art"><img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=420&q=85" alt="Perro disfrutando de un paseo"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=420&q=85" alt="Gato descansando"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=420&q=85" alt="Perros jugando al aire libre"></div>
+            <h3>Pet Moments</h3>
+            <p>Un espacio para compartir fotografías, aventuras y esos pequeños momentos que se vuelven recuerdos enormes.</p>
+            <a class="card-link" href="#momentos">Ver momentos <span>↗</span></a>
+          </article>
+          <article class="feature-card premium-card">
+            <div class="feature-head"><span>06 / EXPERIENCIA</span><span class="premium-label">PREMIUM</span></div>
+            <div class="premium-art"><span class="premium-star">✦</span><span class="premium-ring"></span><span class="premium-spark">✧</span></div>
+            <h3>Pet Nova Premium</h3>
+            <p>Una experiencia ampliada para quienes desean explorar más herramientas y beneficios para el cuidado de sus mascotas.</p>
+            <button class="card-link" data-modal="premium">Descubrir Premium <span>↗</span></button>
+          </article>
+        </div>
+        <p class="feature-disclaimer">Las funciones se muestran como propuesta de experiencia. Su disponibilidad y alcance dependerán de la implementación final de la plataforma.</p>
+      </div>
+    </section>
+
+    <section class="map-section section wrap" id="pet-map">
+      <div class="map-text">
+        <div class="section-tag"><span>03</span> DESCUBRE CERCA DE TI</div>
+        <h2>La conexión que necesitas, <span>más cerca.</span></h2>
+        <p>Con Mapa Pet, PETNOVA busca acercarte a una red de veterinarias, servicios y lugares pet-friendly en Panamá. Explora la idea y descubre cómo podría ayudarte a encontrar nuevas opciones para tu compañero.</p>
+        <div class="map-search">
+          <label for="placeSearch">¿Qué te gustaría encontrar?</label>
+          <div class="search-row"><input id="placeSearch" type="search" placeholder="Ej. veterinarias, parques..." autocomplete="off"><button id="searchButton" type="button" aria-label="Buscar">⌕</button></div>
+          <div class="search-chips"><button class="chip active" type="button" data-filter="todos" aria-pressed="true">Todos</button><button class="chip" type="button" data-filter="veterinaria" aria-pressed="false">Veterinarias</button><button class="chip" type="button" data-filter="parques" aria-pressed="false">Pet-friendly</button><button class="chip" type="button" data-filter="servicios" aria-pressed="false">Servicios</button></div>
+          <p class="search-feedback" id="searchFeedback" aria-live="polite">Vista conceptual: selecciona una categoría o mueve el pin para explorar el mapa.</p>
+        </div>
+      </div>
+      <div class="map-visual">
+        <div class="map-top-label"><span class="map-live-dot"></span> MAPA PET <span class="map-demo-label">VISTA CONCEPTUAL</span></div>
+        <div class="map-canvas" id="mapCanvas" role="group" aria-label="Mapa conceptual interactivo">
+          <div class="map-block block-a"></div><div class="map-block block-b"></div><div class="map-block block-c"></div><div class="map-block block-d"></div>
+          <div class="map-park"><span>♡</span><b>Pet</b><small>friendly</small></div>
+          <div class="map-street street-a"></div><div class="map-street street-b"></div><div class="map-street street-c"></div>
+          <button class="map-pin-big" id="mapUserPin" type="button" aria-label="Tu ubicación. Usa las flechas o arrastra el pin para moverla." aria-describedby="mapInteractionHint"><span>⌖</span></button>
+          <span class="map-marker marker-a" data-map-category="veterinaria" aria-hidden="true">✚</span>
+          <span class="map-marker marker-b" data-map-category="parques" aria-hidden="true">♡</span>
+          <span class="map-marker marker-c" data-map-category="servicios" aria-hidden="true">⌖</span>
+          <span class="map-marker marker-d" data-map-category="veterinaria" aria-hidden="true">✚</span>
+          <div class="map-you-label" id="mapYouLabel">Tu ubicación</div>
+        </div>
+        <p class="map-interaction-hint" id="mapInteractionHint" aria-live="polite">Ubicación de demostración: Panamá. Arrastra el pin o selecciónalo y usa las flechas del teclado.</p>
+        <div class="map-legend"><span><i class="legend-vet"></i> Veterinarias</span><span><i class="legend-pet"></i> Pet-friendly</span><span><i class="legend-services"></i> Servicios</span></div>
+      </div>
+    </section>
+
+    <section class="mission-section section" id="mision">
+      <div class="wrap">
+        <div class="section-tag light-tag"><span>04</span> NUESTRO PROPÓSITO</div>
+        <div class="mission-grid">
+          <article class="mission-card"><div class="mission-number">01 <span>— MISIÓN</span></div><div class="mission-mark">✦</div><h2>Hacer que cuidarles sea más sencillo.</h2><p>Optimizar la experiencia de los dueños de mascotas en Panamá mediante un ecosistema digital que centralice información verificada, geolocalización de servicios inmediatos y herramientas de gestión personalizadas. Buscamos reducir la incertidumbre en el cuidado animal y facilitar respuestas rápidas ante las necesidades de sus compañeros de vida.</p></article>
+          <article class="mission-card vision-card"><div class="mission-number">02 <span>— VISIÓN</span></div><div class="mission-mark">✧</div><h2>Conectar a todo un país por su amor a los animales.</h2><p>Ser el ecosistema digital líder en Panamá para el bienestar animal, reconocido por conectar eficientemente a la comunidad con una red de servicios amplia y confiable, y por transformar la cultura de cuidado hacia un modelo más preventivo y conectado.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="moments-section section wrap" id="momentos">
+      <div class="moments-head"><div><div class="section-tag"><span>05</span> PET MOMENTS</div><h2>Pequeños instantes.<br><span>Grandes historias.</span></h2></div><p>Cada fotografía guarda una aventura, una travesura o una pausa llena de cariño. Porque la vida con ellos está hecha de momentos que merecen quedarse.</p></div>
+      <div class="moments-carousel" id="momentsCarousel" role="region" aria-label="Carrusel de momentos de mascotas" aria-roledescription="carrusel">
+        <div class="gallery-viewport">
+          <div class="gallery" id="momentsTrack">
+            <figure><img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=85" alt="Perro feliz al aire libre" loading="lazy" decoding="async"><figcaption>La alegría de estar juntos <button class="moment-like" type="button" aria-label="Me gusta: La alegría de estar juntos" aria-pressed="false" data-moment-title="La alegría de estar juntos">♡</button></figcaption></figure>
+            <figure><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=85" alt="Gato mirando a la cámara" loading="lazy" decoding="async"><figcaption>Miradas que lo dicen todo <button class="moment-like" type="button" aria-label="Me gusta: Miradas que lo dicen todo" aria-pressed="false" data-moment-title="Miradas que lo dicen todo">♡</button></figcaption></figure>
+            <figure><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=85" alt="Dos perros corriendo juntos" loading="lazy" decoding="async"><figcaption>Aventuras compartidas <button class="moment-like" type="button" aria-label="Me gusta: Aventuras compartidas" aria-pressed="false" data-moment-title="Aventuras compartidas">♡</button></figcaption></figure>
+            <figure><img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=800&q=85" alt="Cachorro corgi con curiosidad" loading="lazy" decoding="async"><figcaption>Un nuevo amigo en casa <button class="moment-like" type="button" aria-label="Me gusta: Un nuevo amigo en casa" aria-pressed="false" data-moment-title="Un nuevo amigo en casa">♡</button></figcaption></figure>
+            <figure><img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=800&q=85" alt="Gatito con pañuelo amarillo" loading="lazy" decoding="async"><figcaption>Pequeños exploradores <button class="moment-like" type="button" aria-label="Me gusta: Pequeños exploradores" aria-pressed="false" data-moment-title="Pequeños exploradores">♡</button></figcaption></figure>
+            <figure><img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=800&q=85" alt="Dos perros disfrutando juntos" loading="lazy" decoding="async"><figcaption>Amistad de cuatro patas <button class="moment-like" type="button" aria-label="Me gusta: Amistad de cuatro patas" aria-pressed="false" data-moment-title="Amistad de cuatro patas">♡</button></figcaption></figure>
+          </div>
+        </div>
+        <div class="moments-carousel-controls">
+          <span class="moments-counter" id="momentsCounter" aria-hidden="true">01 / 06</span>
+          <div class="moments-carousel-buttons">
+            <button class="moments-control" id="momentsPrev" type="button" aria-label="Mostrar foto anterior">←</button>
+            <button class="moments-control moments-autoplay-toggle" id="momentsPause" type="button" aria-label="Pausar carrusel" aria-pressed="false">Ⅱ</button>
+            <button class="moments-control" id="momentsNext" type="button" aria-label="Mostrar foto siguiente">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contacto">
+      <div class="wrap contact-wrap">
+        <div class="contact-copy"><div class="section-tag light-tag"><span>06</span> HABLEMOS</div><h2>Una comunidad crece cuando <span>se conecta.</span></h2><p>¿Tienes una consulta, una idea o quieres conocer más sobre PETNOVA? Nos encantará leerte.</p>
+          <div class="contact-info">
+            <a href="mailto:petnovitas2027@gmail.com"><span class="contact-icon">✉</span><span><small>ESCRÍBENOS</small><b>petnovitas2027@gmail.com</b></span></a>
+            <a href="tel:+5071234567890"><span class="contact-icon">⌕</span><span><small>LLÁMANOS</small><b>123-456-7890</b></span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=La+Chorrera%2C+Panam%C3%A1+Oeste%2C+Panam%C3%A1" target="_blank" rel="noopener"><span class="contact-icon">⌖</span><span><small>ESTAMOS EN</small><b>La Chorrera, Panamá Oeste, Panamá</b></span></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-heading"><span>CONTACTO</span><b>Cuéntanos, te escuchamos.</b></div>
+          <div id="contactFields">
+            <label for="name">Tu nombre</label><input id="name" name="name" type="text" placeholder="¿Cómo te llamas?" required>
+            <label for="email">Tu correo electrónico</label><input id="email" name="email" type="email" placeholder="nombre@correo.com" required>
+            <label for="message">Tu mensaje</label><textarea id="message" name="message" rows="4" placeholder="Escribe aquí tu consulta..." required></textarea>
+            <button class="btn btn-submit" type="submit">Guardar consulta <span>↗</span></button>
+            <p class="form-feedback">En esta demostración, las consultas se guardan temporalmente en esta página y no se envían a un especialista.</p>
+          </div>
+          <section class="contact-success" id="contactSuccess" role="status" aria-live="polite" hidden>
+            <span class="contact-success-icon" aria-hidden="true">✓</span>
+            <h3>¡Consulta guardada!</h3>
+            <p class="form-feedback" id="formFeedback"></p>
+            <button class="contact-login-button" id="contactLoginButton" type="button" data-auth-open="login">Iniciar sesión para ver mi consulta <span>→</span></button>
+          </section>
+        </form>
+      </div>
+    </section>
+
+    <section class="privacy-section section" id="privacidad">
+      <div class="wrap privacy-card">
+        <div class="section-tag"><span>07</span> TU PRIVACIDAD</div>
+        <h2>Tu información, <span>bajo tu control.</span></h2>
+        <p>Esta versión de PETNOVA es una demostración: no crea cuentas reales ni envía datos a un servidor. El perfil, las consultas de contacto y los avisos Paw Alert se conservan temporalmente en esta sesión y se borran al recargar la página; al cambiar entre páginas se transfieren una sola vez dentro de esta pestaña. Las contraseñas nunca se guardan.</p>
+        <p>Si eliges “Recordar mi correo”, guardaremos solo ese correo en el almacenamiento local de este navegador. La foto seleccionada se usa para la vista previa y el traspaso temporal entre páginas; no se carga a ningún servidor.</p>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="footer">
+    <div class="wrap footer-top"><a class="logo footer-logo" href="#top"><img class="logo-image" src="assets/petnova-logo.png" alt="PETNOVA - Cuidamos lo que amas"></a><p>Conectando el amor por las mascotas<br>con el bienestar animal en Panamá.</p><a class="back-top" href="#top">Volver arriba ↑</a></div>
+    <div class="wrap footer-bottom"><span>© 2026 PETNOVA. Todos los derechos reservados.</span><span>Hecho con <b>♡</b> para quienes tienen patas y huellas en el corazón.</span></div>
+  </footer>
+
+  <div class="modal" id="infoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-panel"><button class="modal-close" id="modalClose" type="button" data-close-modal aria-label="Cerrar">×</button><img class="modal-paw" src="assets/pet-paw-photo.jpg" alt="" aria-hidden="true"><div class="modal-kicker">PETNOVA · EXPERIENCIA PRELIMINAR</div><h2 id="modalTitle">Conoce PETNOVA</h2><p id="modalText">Esta sección forma parte de la demostración visual del sitio.</p><button class="btn btn-primary modal-ok" id="modalOk" type="button" data-close-modal>Entendido</button></div>
+  </div>
+  <div class="session-notice" id="sessionNotice" role="status" aria-live="polite" hidden>
+    Entraste a la página principal en modo demostración. Tu cuenta aún no se valida contra un servidor.
+  </div>
+
+  <div class="auth-overlay" id="authOverlay" aria-hidden="true">
+    <section class="auth-dialog" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="auth-close" type="button" data-auth-close aria-label="Cerrar">×</button>
+      <aside class="auth-welcome">
+        <a class="logo auth-logo" href="#inicio" aria-label="PETNOVA, inicio">
+          <img class="logo-image" src="assets/petnova-logo.png" alt="PETNOVA - Cuidamos lo que amas">
+        </a>
+        <span class="auth-kicker">PET CARE COMMUNITY</span>
+        <h2 id="authTitle">Qué bueno tenerte de vuelta</h2>
+        <p>Un espacio para cuidar, organizar y celebrar la vida de tus mascotas.</p>
+        <img class="auth-paw" src="assets/pet-paw-photo.jpg" alt="" aria-hidden="true">
+      </aside>
+      <div class="auth-content">
+        <div class="auth-switch" role="tablist" aria-label="Acceso a PETNOVA">
+          <button type="button" class="auth-switch-button is-active" data-auth-mode="login" role="tab" aria-selected="true">Iniciar sesión</button>
+          <button type="button" class="auth-switch-button" data-auth-mode="signup" role="tab" aria-selected="false">Crear cuenta</button>
+        </div>
+
+        <form class="auth-form" id="loginForm" novalidate>
+          <h3>Bienvenido de nuevo</h3>
+          <p class="auth-subtitle">Inicia sesión en tu cuenta PETNOVA.</p>
+          <label for="loginEmail">Correo electrónico</label>
+          <input id="loginEmail" name="email" type="email" placeholder="tu@correo.com" autocomplete="username" required>
+          <label for="loginPassword">Contraseña</label>
+          <input id="loginPassword" name="password" type="password" placeholder="Tu contraseña" autocomplete="current-password" required>
+          <label class="remember-option"><input name="remember" type="checkbox"> <span>Recordar mi correo en este dispositivo</span></label>
+          <button class="auth-submit" type="submit">Iniciar sesión <span>→</span></button>
+        </form>
+
+        <form class="auth-form signup-form" id="signupForm" novalidate hidden>
+          <div class="signup-heading">
+            <h3>Únete a PETNOVA</h3>
+            <p class="auth-subtitle">Registra a tu mascota y a ti en tres sencillos pasos.</p>
+          </div>
+          <div class="signup-steps" aria-label="Pasos para crear una cuenta">
+            <div class="signup-step is-active" data-step-indicator="0"><span>1</span> Perfil de mascota</div>
+            <div class="signup-step" data-step-indicator="1"><span>2</span> Historial médico</div>
+            <div class="signup-step" data-step-indicator="2"><span>3</span> Datos del dueño</div>
+          </div>
+
+          <section class="signup-panel" data-signup-step="0">
+            <h4>Step 1 - Pet Profile</h4>
+            <p class="auth-subtitle">Cuéntanos sobre tu compañero.</p>
+            <div class="auth-field">
+              <label for="petName">Pet's name</label>
+              <input id="petName" name="petName" type="text" placeholder="Ej. Milo, Luna" required>
+            </div>
+            <div class="auth-field-grid">
+              <div class="auth-field">
+                <label for="petSpecies">Species</label>
+                <select id="petSpecies" name="petSpecies" required>
+                  <option value="">Seleccionar</option>
+                  <option>Dog</option><option>Cat</option><option>Bird</option><option>Rabbit</option><option>Guinea pig</option><option>Hamster</option><option>Other</option>
+                </select>
+              </div>
+              <div class="auth-field">
+                <label for="petBreed">Breed</label>
+                <select id="petBreed" name="petBreed" required disabled>
+                  <option value="">Primero elige la especie</option>
+                </select>
+              </div>
+              <div class="auth-field">
+                <label for="petAge">Age (years)</label>
+                <input id="petAge" name="petAge" type="number" min="0" step="0.1" placeholder="Ej. 3" required>
+              </div>
+              <div class="auth-field auth-weight-field">
+                <label for="petWeight">Weight</label>
+                <input id="petWeight" name="petWeight" type="number" min="0" step="0.1" placeholder="Ej. 8.5" required>
+              </div>
+              <div class="auth-field">
+                <label for="weightUnit">Unit</label>
+                <select id="weightUnit" name="weightUnit"><option value="kg">kg</option><option value="lb">lb</option></select>
+              </div>
+            </div>
+            <div class="auth-field breed-other-field" id="breedOtherField" hidden>
+              <label for="petBreedOther">Describe la raza</label>
+              <input id="petBreedOther" name="petBreedOther" type="text" placeholder="Escribe la raza">
+            </div>
+            <div class="auth-field">
+              <label for="petPhoto">Photo <span>(opcional)</span></label>
+              <div class="photo-upload-row">
+                <img id="petPhotoPreview" alt="Vista previa de la foto de tu mascota" hidden>
+                <span class="photo-placeholder" id="photoPlaceholder" aria-hidden="true"><img src="assets/pet-paw-photo.jpg" alt=""></span>
+                <input id="petPhoto" name="petPhoto" type="file" accept="image/*">
+              </div>
+              <small class="auth-help">La foto no es necesaria para continuar.</small>
+            </div>
+          </section>
+
+          <section class="signup-panel" data-signup-step="1" hidden>
+            <h4>Step 2 - Medical Record</h4>
+            <p class="auth-subtitle">Información importante sobre su salud.</p>
+            <div class="auth-field">
+              <label for="petVaccination">Vaccinated?</label>
+              <select id="petVaccination" name="petVaccination" required>
+                <option value="">Seleccionar</option>
+                <option>Fully Vaccinated</option><option>Partially Vaccinated</option><option>Not vaccinated</option><option>Not sure</option>
+              </select>
+            </div>
+            <div class="auth-field">
+              <label for="specialCondition">Special condition?</label>
+              <select id="specialCondition" name="specialCondition" required>
+                <option value="No">No</option><option value="Yes">Yes</option>
+              </select>
+            </div>
+            <div class="auth-field" id="conditionDescriptionField" hidden>
+              <label for="conditionDescription">Describe it</label>
+              <textarea id="conditionDescription" name="conditionDescription" rows="3" placeholder="Ej. blind in one eye, limited mobility"></textarea>
+            </div>
+            <div class="auth-field">
+              <label for="medicalNotes">Medical notes <span>(opcional)</span></label>
+              <textarea id="medicalNotes" name="medicalNotes" rows="3" placeholder="Información importante"></textarea>
+            </div>
+          </section>
+
+          <section class="signup-panel" data-signup-step="2" hidden>
+            <h4>Step 3 - Owner Details</h4>
+            <p class="auth-subtitle">Tus datos de contacto y acceso.</p>
+            <div class="auth-field">
+              <label for="ownerName">Full name</label>
+              <input id="ownerName" name="ownerName" type="text" placeholder="Tu nombre" autocomplete="name" required>
+            </div>
+            <div class="auth-field">
+              <label for="ownerEmail">Email</label>
+              <input id="ownerEmail" name="ownerEmail" type="email" placeholder="tu@correo.com" autocomplete="email" required>
+            </div>
+            <div class="auth-field-grid owner-contact-grid">
+              <div class="auth-field">
+                <label for="ownerPhone">Phone</label>
+                <input id="ownerPhone" name="ownerPhone" type="tel" placeholder="6000-0000" autocomplete="tel" required>
+              </div>
+              <div class="auth-field">
+                <label for="ownerCity">City</label>
+                <select id="ownerCity" name="ownerCity" required>
+                  <option value="">Seleccionar</option><option>Panama City</option><option>San Miguelito</option><option>Colón</option><option>Other</option>
+                </select>
+              </div>
+              <div class="auth-field">
+                <label for="ownerPassword">Password</label>
+                <input id="ownerPassword" name="ownerPassword" type="password" minlength="6" placeholder="Al menos 6 caracteres" autocomplete="new-password" required>
+              </div>
+              <div class="auth-field">
+                <label for="confirmPassword">Confirm password</label>
+                <input id="confirmPassword" name="confirmPassword" type="password" minlength="6" placeholder="Repite tu contraseña" autocomplete="new-password" required>
+              </div>
+            </div>
+          </section>
+
+          <div class="signup-footer">
+            <button class="auth-back" type="button" id="signupBack" hidden>← Atrás</button>
+            <button class="auth-next" type="button" id="signupNext">Siguiente <span>→</span></button>
+            <button class="auth-submit auth-register" type="submit" id="signupSubmit" hidden>Crear cuenta <span>✓</span></button>
+          </div>
+        </form>
+        <p class="auth-feedback" id="authFeedback" aria-live="polite"></p>
+        <p class="auth-demo-note">Demostración: el acceso no está conectado a un servidor y no guardamos tu contraseña.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

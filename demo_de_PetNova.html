@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#8268d5">
+  <meta name="description" content="Panel demo de PETNOVA para organizar los cuidados de tu mascota.">
+  <title>PETNOVA - Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body class="demo-session">
+  <main class="dashboard" id="dashboardView" hidden>
+    <header class="dashboard-header">
+      <a class="dashboard-brand" href="#dashboard-inicio" aria-label="PETNOVA, panel de inicio">
+        <img class="dashboard-logo-image" src="assets/petnova-logo.png" alt="">
+      </a>
+      <nav class="dashboard-nav" aria-label="Navegación del panel">
+        <button class="dashboard-nav-button is-active" type="button" data-dashboard-view="home" aria-label="Inicio"><span aria-hidden="true">⌂</span><small>Inicio</small></button>
+        <button class="dashboard-nav-button" type="button" data-dashboard-view="pet" aria-label="Mi mascota"><span aria-hidden="true">♙</span><small>Mascota</small></button>
+        <button class="dashboard-nav-button" type="button" data-dashboard-view="health" aria-label="Salud"><span aria-hidden="true">✚</span><small>Salud</small></button>
+        <button class="dashboard-nav-button" type="button" data-dashboard-view="community" aria-label="Comunidad"><span aria-hidden="true">♡</span><small>Comunidad</small></button>
+      </nav>
+      <div class="dashboard-account">
+        <span class="dashboard-demo-label">DEMO</span>
+        <button class="dashboard-logout" type="button" data-dashboard-logout>Cerrar sesión</button>
+      </div>
+    </header>
+
+    <div class="dashboard-banner">
+      <div class="dashboard-banner-inner">
+        <div class="dashboard-avatar" id="dashboardAvatar" aria-hidden="true"><img class="avatar-placeholder-image" src="assets/pet-paw-photo.jpg" alt=""></div>
+        <div class="dashboard-banner-copy">
+          <span class="dashboard-eyebrow">TU ESPACIO PETNOVA</span>
+          <h1 id="dashboardPetName">Tu compañero</h1>
+          <p>Un espacio para tener sus cuidados siempre al día.</p>
+        </div>
+        <div class="dashboard-banner-pets">
+          <img class="dashboard-banner-pet-main" src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Golden retriever al aire libre" loading="lazy" decoding="async">
+          <img class="dashboard-banner-pet-small" src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&amp;fit=crop&amp;w=320&amp;q=80" alt="Gato mirando a la cámara" loading="lazy" decoding="async">
+        </div>
+        <span class="dashboard-banner-paw" aria-hidden="true">✦</span>
+      </div>
+    </div>
+
+    <div class="dashboard-content">
+      <div class="dashboard-pet-summary" aria-label="Información de la mascota">
+        <div><span class="summary-icon">✿</span><b id="summaryBreed">Raza pendiente</b><small>Raza</small></div>
+        <div><span class="summary-icon">▦</span><b id="summaryAge">—</b><small>Edad</small></div>
+        <div><span class="summary-icon">♡</span><b id="summarySpecies">—</b><small>Especie</small></div>
+      </div>
+
+      <section class="dashboard-panel" data-dashboard-panel="home" id="dashboard-inicio">
+        <div class="dashboard-heading">
+          <div><span class="dashboard-eyebrow">RESUMEN</span><h2 id="dashboardWelcome">¡Hola!</h2><p id="dashboardEmail">Bienvenido a tu panel PETNOVA.</p></div>
+          <button class="dashboard-outline-button" type="button" data-dashboard-view="pet">Ver perfil de mascota <span>→</span></button>
+        </div>
+        <div class="dashboard-stats">
+          <article class="dashboard-stat dashboard-stat-large"><div class="stat-heading"><span>PRÓXIMAS CITAS</span><span class="stat-icon purple-stat">▦</span></div><b id="appointmentCount">0</b><small>citas programadas</small></article>
+          <article class="dashboard-stat"><div class="stat-heading"><span>VACUNAS</span><span class="stat-icon aqua-stat">✚</span></div><b id="vaccineCount">0</b><small>registros añadidos</small></article>
+          <article class="dashboard-stat"><div class="stat-heading"><span>PAW ALERT</span><span class="stat-icon coral-stat">!</span></div><b id="alertCount">0</b><small>reportes de mascotas perdidas</small></article>
+          <article class="dashboard-stat"><div class="stat-heading"><span>LISTA DE CUIDADOS</span><span class="stat-icon gold-stat">☷</span></div><b id="todoCount">0</b><small>tareas pendientes</small></article>
+        </div>
+
+        <div class="dashboard-section-heading"><div><span class="dashboard-eyebrow">ORGANIZACIÓN</span><h3>Próximos cuidados</h3></div></div>
+        <div class="dashboard-action-grid">
+          <button class="dashboard-action-card" type="button" data-dashboard-action="appointment"><span class="action-card-icon">▦</span><b>Agendar una cita</b><small>Organiza su próxima visita</small><span class="action-card-arrow">＋</span></button>
+          <button class="dashboard-action-card" type="button" data-dashboard-action="vaccine"><span class="action-card-icon aqua-action">✚</span><b>Registrar una vacuna</b><small>Actualiza su historial médico</small><span class="action-card-arrow">＋</span></button>
+          <button class="dashboard-action-card" type="button" data-dashboard-action="todo"><span class="action-card-icon gold-action">☷</span><b>Añadir un cuidado</b><small>Crea un recordatorio personal</small><span class="action-card-arrow">＋</span></button>
+          <button class="dashboard-action-card paw-alert-action" type="button" data-dashboard-action="alert"><span class="action-card-icon coral-action"><img src="assets/pet-paw-photo.jpg" alt="" aria-hidden="true"></span><b>Paw Alert</b><small>Reporta a tu mascota perdida</small><span class="action-card-arrow">＋</span></button>
+        </div>
+
+        <div class="dashboard-lists-grid">
+          <section class="dashboard-list-section"><div class="dashboard-section-heading"><div><span class="dashboard-eyebrow">AGENDA</span><h3>Próximas citas</h3></div><button class="dashboard-text-button" type="button" data-dashboard-action="appointment">＋ Añadir</button></div><div class="dashboard-list" id="homeAppointments"></div></section>
+          <section class="dashboard-list-section"><div class="dashboard-section-heading"><div><span class="dashboard-eyebrow">SALUD</span><h3>Vacunas</h3></div><button class="dashboard-text-button" type="button" data-dashboard-action="vaccine">＋ Añadir</button></div><div class="dashboard-list" id="homeVaccines"></div></section>
+        </div>
+        <section class="dashboard-list-section dashboard-full-list"><div class="dashboard-section-heading"><div><span class="dashboard-eyebrow">PARA RECORDAR</span><h3>Mis cuidados y Paw Alerts</h3></div></div><div class="dashboard-lists-grid"><div class="dashboard-list" id="homeTodos"></div><div class="dashboard-list-section"><div class="dashboard-list" id="homeAlerts"></div><p class="paw-alert-demo-note">Los avisos se guardan solo en este panel de demostración; no se publican ni notifican a otras personas.</p></div></div></section>
+      </section>
+
+      <section class="dashboard-panel" data-dashboard-panel="pet" hidden>
+        <div class="dashboard-heading"><div><span class="dashboard-eyebrow">PERFIL</span><h2>Mi mascota</h2><p>Su información básica en un mismo lugar.</p></div><button class="dashboard-primary-button" type="button" data-dashboard-action="profile">Editar perfil <span>✎</span></button></div>
+        <article class="pet-profile-card"><div class="pet-profile-avatar" id="petProfileAvatar"><img class="avatar-placeholder-image" src="assets/pet-paw-photo.jpg" alt=""></div><div><h3 id="profilePetName">—</h3><p id="profileOwnerName">—</p></div><span class="profile-demo-tag">PERFIL DEMO</span></article>
+        <div class="profile-details-grid">
+          <article><small>ESPECIE</small><b id="profileSpecies">—</b></article>
+          <article><small>RAZA</small><b id="profileBreed">—</b></article>
+          <article><small>EDAD</small><b id="profileAge">—</b></article>
+          <article><small>PESO</small><b id="profileWeight">—</b></article>
+          <article><small>VACUNACIÓN</small><b id="profileVaccination">Pendiente de registrar</b></article>
+          <article><small>CONDICIÓN ESPECIAL</small><b id="profileCondition">No</b></article>
+          <article><small>CIUDAD</small><b id="profileCity">—</b></article>
+        </div>
+        <div class="dashboard-note-card"><span>♡</span><p id="profileMedicalNotes">Añade notas y datos médicos desde la sección Salud.</p></div>
+      </section>
+
+      <section class="dashboard-panel" data-dashboard-panel="health" hidden>
+        <div class="dashboard-heading"><div><span class="dashboard-eyebrow">BIENESTAR</span><h2>Salud y cuidados</h2><p>Registra citas, vacunas y notas importantes.</p></div></div>
+        <div class="dashboard-health-grid">
+          <section class="dashboard-list-section"><div class="dashboard-section-heading"><div><span class="dashboard-eyebrow">AGENDA</span><h3>Citas veterinarias</h3></div><button class="dashboard-text-button" type="button" data-dashboard-action="appointment">＋ Agendar</button></div><div class="dashboard-list" id="healthAppointments"></div></section>
+          <section class="dashboard-list-section"><div class="dashboard-section-heading"><div><span class="dashboard-eyebrow">PREVENCIÓN</span><h3>Vacunas registradas</h3></div><button class="dashboard-text-button" type="button" data-dashboard-action="vaccine">＋ Registrar</button></div><div class="dashboard-list" id="healthVaccines"></div></section>
+        </div>
+        <section class="dashboard-list-section dashboard-full-list"><div class="dashboard-section-heading"><div><span class="dashboard-eyebrow">INFORMACIÓN</span><h3>Notas médicas</h3></div></div><p class="dashboard-medical-notes" id="healthMedicalNotes">Todavía no hay notas médicas.</p></section>
+        <section class="dashboard-list-section dashboard-full-list"><div class="dashboard-section-heading"><div><span class="dashboard-eyebrow">CONTACTO</span><h3>Mis consultas</h3></div></div><div class="contact-consultations" id="contactConsultations"></div></section>
+      </section>
+
+      <section class="dashboard-panel" data-dashboard-panel="community" hidden>
+        <div class="dashboard-heading"><div><span class="dashboard-eyebrow">PET MOMENTS</span><h2>Comunidad</h2><p>Comparte una actualización de tu compañero en este espacio de demostración.</p></div></div>
+        <form class="community-post-form" id="communityForm"><label for="communityMessage">¿Qué momento quieres compartir?</label><textarea id="communityMessage" rows="3" maxlength="280" placeholder="Escribe una actualización..." required></textarea><button class="dashboard-primary-button" type="submit">Publicar <span>↗</span></button></form>
+        <div class="dashboard-section-heading"><div><span class="dashboard-eyebrow">TU ACTIVIDAD</span><h3>Publicaciones de esta sesión</h3></div></div><div class="community-posts" id="communityPosts"></div>
+      </section>
+    </div>
+  </main>
+
+  <dialog class="dashboard-dialog" id="dashboardDialog" aria-labelledby="dashboardDialogTitle">
+    <form id="dashboardActionForm">
+      <button class="dashboard-dialog-close" type="button" data-dashboard-close aria-label="Cerrar">×</button>
+      <span class="dashboard-eyebrow">PETNOVA · DEMOSTRACIÓN</span>
+      <h2 id="dashboardDialogTitle">Añadir información</h2>
+      <div class="dashboard-dialog-fields" id="dashboardDialogFields"></div>
+      <p class="dashboard-dialog-feedback" id="dashboardDialogFeedback" aria-live="polite"></p>
+      <div class="dashboard-dialog-actions"><button class="dashboard-outline-button" type="button" data-dashboard-close>Cancelar</button><button class="dashboard-primary-button" type="submit">Guardar <span>✓</span></button></div>
+    </form>
+  </dialog>
+  <div class="session-notice" id="sessionNotice" role="status" aria-live="polite" hidden></div>
+  <script src="demo.js"></script>
+</body>
+</html>
